@@ -18,13 +18,13 @@ public class BinToDec
         var nBinPower = 1;
         var console = System.console();
         var nMaxBinaryLen = Math.ceil(Math.log(Integer.MAX_VALUE) / Math.log(2));
-        var oRegExpr = Pattern.compile("[0-1]");
+        var oRegExpr = Pattern.compile("^[0-1]+$");
         System.out.println("Input a binary number");
         var strLine = console.readLine();
         var nStrLen = strLine.length();
         var oMatcher = oRegExpr.matcher(strLine);
-        var nMatches = oMatcher.results().count();
-        var bRightString = (nStrLen <= nMaxBinaryLen) && (nStrLen == nMatches);
+        var bIsMatch = oMatcher.matches();
+        var bRightString = (nStrLen <= nMaxBinaryLen) && (bIsMatch);
         if(!bRightString)
         {
             System.out.println("Wrong binary number format!!!");
