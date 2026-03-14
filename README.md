@@ -1,4 +1,4 @@
-BinToDec. Java tutorials. Console Application. Simple Input/Output. Strings. Algorithms. 
+BinToDec. Java tutorials. Console Application. Simple Input/Output. Strings. Algorithms.
 A console application in the Java programming language. 
 The program does the following:
   1. Asks the user to enter a string.
