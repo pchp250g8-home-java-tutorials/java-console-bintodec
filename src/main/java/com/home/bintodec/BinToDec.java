@@ -15,8 +15,8 @@ public class BinToDec
     public static void main(String[] args) throws Exception
     {
         final long MAX_INT = 2L * Integer.MAX_VALUE + 1L;
-        var nDecNum = 0;
-        var nBinPower = 1;
+        var nDecNum = 0L;
+        var nBinPower = 1L;
         var console = System.console();
         var nMaxBinaryLen = Math.ceil(Math.log(MAX_INT) / Math.log(2));
         var oRegExpr = Pattern.compile("^[0-1]+$");
